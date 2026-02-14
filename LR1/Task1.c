@@ -100,7 +100,7 @@ void print_array(void* arr, int size, type type, size_t size_el){
 
 int main(int argc, char *argv[]){
     if (argc != 2){
-        printf("Input correct type of array (int|char|double)");
+        printf("Input correct type of array (int|char|double)\n");
         return 1;
     }
 
