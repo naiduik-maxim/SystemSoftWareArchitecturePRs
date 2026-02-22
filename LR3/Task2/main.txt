@@ -1,0 +1,7 @@
+docker start -i 0f89665d2188
+
+perf --version
+
+perf stat dd if=/dev/zero of=/dev/null count=1000000
+
+ulimit -t 1

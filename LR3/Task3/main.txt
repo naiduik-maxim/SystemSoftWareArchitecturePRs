@@ -1,0 +1,7 @@
+docker start -i 5dba4e4b21b1
+
+nano main3.c
+
+gcc main3.c -o my_app
+
+./my_app
