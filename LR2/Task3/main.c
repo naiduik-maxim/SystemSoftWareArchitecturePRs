@@ -8,6 +8,9 @@ const int c = 100;
 void func(){
     int arr1[1000];
     int arr2[1000] = {1};
+
+    printf("The arr1 is near %p\n", &arr1);
+    printf("The arr1 is near %p\n", &arr2);
 }
 
 int main(){
@@ -21,5 +24,6 @@ int main(){
     printf("The char arr is near %p\n", &arr);
 
     printf("The func is near %p\n", func);
+    func();
     return 0;
 }

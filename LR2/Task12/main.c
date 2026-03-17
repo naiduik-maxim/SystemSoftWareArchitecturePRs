@@ -73,8 +73,7 @@ int main(int argc, char *argv[]){
             }
 
             uintptr_t addr = (uintptr_t)raw;
-            uintptr_t aligned =
-                (addr + alignment - 1) & ~(alignment - 1);
+            uintptr_t aligned = (addr + alignment - 1) & ~(alignment - 1);
 
             char *mem = (char *)aligned;
 

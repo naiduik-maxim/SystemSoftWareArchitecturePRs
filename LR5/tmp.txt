@@ -1,0 +1,13 @@
+Як запустити через valgrind
+
+gcc -g main.c -o my_app
+
+valgrind --leak-check=full --track-origins=yes ./my_app
+
+
+
+Asan
+
+gcc -fsanitize=address -g main.c -o my_app
+
+./my_app
