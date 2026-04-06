@@ -4,10 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-static int
-display_info(const char *fpath, const struct stat *sb,
-             int tflag, struct FTW *ftwbuf)
-{
+
+static int display_info(const char *fpath, const struct stat *sb, int tflag, struct FTW *ftwbuf){
     printf("%-3s %2d ",
            (tflag == FTW_D) ?   "d"   : (tflag == FTW_DNR) ? "dnr" :
            (tflag == FTW_DP) ?  "dp"  : (tflag == FTW_F) ?   "f" :
@@ -22,9 +20,8 @@ display_info(const char *fpath, const struct stat *sb,
            fpath, ftwbuf->base, fpath + ftwbuf->base);
     return 0;      
 }
-int
-main(int argc, char *argv[])
-{
+
+int main(int argc, char *argv[]){
     int flags = 0;
     if (argc > 2 && strchr(argv[2], 'd') != NULL)
         flags |= FTW_DEPTH;
