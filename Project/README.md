@@ -42,10 +42,10 @@ gcc client.c \-o client
 
 Сервер:
 
-![][image1]
+![](image1.png)
 
 Клієнт: 
-![][image2]
+![](image2.png)
 
 **Висновки:**
 
